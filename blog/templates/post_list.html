@@ -1,18 +1,28 @@
 <html>
-	
+	<head>
+		<title>
+			My Blog
+		</title>
+		<style>
+			h1 {font-family: Vardaman;
+				color: #FCA205;
+				font-size:300%;
+				text-align: center;
+				}
+		</style>
+	</head>
 
 	
-		<div>
-			<h1>My blog.</h1>
-		</div>
+		<h1>My blog.</h1>
 
+		<ol>
 		{% for element in posts %}
-			<div>
-				<h2><a href="">{{element.title}}</a></h2>
-				<p>Published:{{element.published_date }}</p>
-				<p>{{element.text }}</p>
-			</div>
+		
+		<li>
+		<h2><a href="">{{element.title}}</a></h2>
+		<p style='color:red'>Published:{{element.published_date }}</p>
+		<p style='font-size: 120%'>{{element.text }}</p>
+		</li>
 		{% endfor %}
-
-	
+		</ol>
 </html>
