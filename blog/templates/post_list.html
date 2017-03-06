@@ -1,3 +1,18 @@
 <html>
-laasdlfs
-<html>
+	
+
+	
+		<div>
+			<h1>My blog.</h1>
+		</div>
+
+		{% for element in posts %}
+			<div>
+				<h2><a href="">{{element.title}}</a></h2>
+				<p>Published:{{element.published_date }}</p>
+				<p>{{element.text }}</p>
+			</div>
+		{% endfor %}
+
+	
+</html>
