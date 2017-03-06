@@ -26,7 +26,7 @@ SECRET_KEY = 'woyjd=0a7d)s%ntijar&pims)$8fx)@k$0*h*$#d(ck9(7(wzy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'portfolio-aniket.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'fportfolio-aniket.herokuapp.com']
 
 
 # Application definition
@@ -123,9 +123,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
